@@ -1,0 +1,4 @@
+<map id="bornesQuebec::RegistreBorne::reqNomRegistreBorne" name="bornesQuebec::RegistreBorne::reqNomRegistreBorne">
+<area shape="rect" id="node1" title="Accesseur pour le nom de l&#39;objet RegistreBorne." alt="" coords="268,5,483,47"/>
+<area shape="rect" id="node2" href="$classbornes_quebec_1_1_registre_borne.html#aa546d3a757a84a121dbaa9938e7d8efd" title="Retourne une chaine de caractère qui contient l&#39;information de l&#39;objet RegistreBorne." alt="" coords="5,5,220,47"/>
+</map>
