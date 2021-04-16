@@ -5,6 +5,7 @@
                    displayName="Header Files"
                    projectFiles="true">
       <itemPath>Borne.h</itemPath>
+      <itemPath>BorneException.h</itemPath>
       <itemPath>BorneFontaine.h</itemPath>
       <itemPath>BorneStationnement.h</itemPath>
       <itemPath>ContratException.h</itemPath>
@@ -76,6 +77,8 @@
       <item path="Borne.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Borne.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="BorneException.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="BorneFontaine.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -208,6 +211,8 @@
       <item path="Borne.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Borne.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="BorneException.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="BorneFontaine.cpp" ex="false" tool="1" flavor2="0">
       </item>

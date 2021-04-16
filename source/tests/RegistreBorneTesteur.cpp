@@ -73,8 +73,8 @@ TEST_F (RegistreBorneFixture, reqRegistreBorneFormate)
 }
 
 /**
- * \test Test du constructeur c()
- *      Cas valide: verifier le retour de la borne formatee
+ * \test Test du constructeur copie
+ *      Cas valide: verifier que la borne à été copié
  *      Cas invalide: aucun
  */
 TEST_F (RegistreBorneFixture, ConstructeurCopie)

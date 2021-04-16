@@ -72,17 +72,20 @@ const RegistreBorne & RegistreBorne::operator= (const RegistreBorne& p_registreB
 bool
 RegistreBorne::borneEstDejaPresente (const Borne & p_borne) const
 {
-  for (int i = 0; i < m_vBornes.size (); i++)
+  bool bornePresente = false;
+  std::vector<Borne*>::const_iterator it;
+  for (it = m_vBornes.begin (); it != m_vBornes.end (); it++)
     {
-      if (m_vBornes[i]->reqIdentifiant () == p_borne.reqIdentifiant ())
+      if ((*it)->reqIdentifiant () == p_borne.reqIdentifiant ())
         {
-          return true;
+          bornePresente = true;
         }
       else
         {
-          return false;
+          bornePresente = false;
         }
     }
+  return bornePresente;
 }
 
 /**
@@ -111,9 +114,10 @@ RegistreBorne::ajouteBorne (const Borne& p_borne)
 void
 RegistreBorne::effaceLeRegistre ()
 {
-  for (int i = 0; i < m_vBornes.size (); i++)
+  std::vector<Borne*>::const_iterator it;
+  for (it = m_vBornes.begin (); it != m_vBornes.end (); it++)
     {
-      delete m_vBornes[i];
+      delete (*it);
     }
   m_vBornes.clear ();
 }
@@ -125,9 +129,11 @@ RegistreBorne::effaceLeRegistre ()
 void
 RegistreBorne::copierLeRegistre (const RegistreBorne& p_registreBorne)
 {
-  for (int i = 0; i < p_registreBorne.m_vBornes.size (); i++)
+  std::vector<Borne*>::const_iterator it;
+  for (it = p_registreBorne.m_vBornes.begin (); it != p_registreBorne.m_vBornes.end (); it++)
+
     {
-      ajouteBorne (*(p_registreBorne.m_vBornes[i]));
+      ajouteBorne (*(*it));
     }
 }
 
@@ -150,9 +156,10 @@ RegistreBorne::reqRegistreBorneFormate ()
 {
   std::ostringstream os;
   os << "Registre : " << reqNomRegistreBorne () << std::endl;
-  for (int i = 0; i < m_vBornes.size (); i++)
+  std::vector<Borne*>::const_iterator it;
+  for (it = m_vBornes.begin (); it != m_vBornes.end (); it++)
     {
-      os << m_vBornes[i]->reqBorneFormate ();
+      os << (*it)->reqBorneFormate ();
       os << "----------------------------------------------\n";
     }
   return os.str ();
