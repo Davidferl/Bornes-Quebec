@@ -37,9 +37,12 @@ class RegistreBorneFixture : public ::testing::Test
 public:
 
   RegistreBorneFixture () :
-  RegistreBorneNomValide ("premierRegistre"), uneBorneFontaine (312, "Nord", "Rue Verdun", -72.6537, 54.8764, "Québec", "Ste-Foy") { };
+  RegistreBorneNomValide ("premierRegistre"), uneBorneFontaine (312, "Nord", "Rue Verdun", -72.6537, 54.8764, "Québec", "Ste-Foy"),
+  unAutreRegistreBorne ("Autre Registre") { };
   RegistreBorne RegistreBorneNomValide;
   BorneFontaine uneBorneFontaine;
+  RegistreBorne unAutreRegistreBorne;
+
 
 };
 
@@ -58,6 +61,14 @@ TEST_F (RegistreBorneFixture, ajouteBorne)
 {
   RegistreBorneNomValide.ajouteBorne (uneBorneFontaine);
   ASSERT_EQ (RegistreBorneNomValide.reqRegistreBorneFormate (),
+             "Registre : premierRegistre\n" + uneBorneFontaine.reqBorneFormate () + "----------------------------------------------\n");
+}
+
+TEST_F (RegistreBorneFixture, OperateurAssignation)
+{
+  RegistreBorneNomValide.ajouteBorne (uneBorneFontaine);
+  unAutreRegistreBorne = RegistreBorneNomValide;
+  ASSERT_EQ (unAutreRegistreBorne.reqRegistreBorneFormate (),
              "Registre : premierRegistre\n" + uneBorneFontaine.reqBorneFormate () + "----------------------------------------------\n");
 }
 

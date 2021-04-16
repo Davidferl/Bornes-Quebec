@@ -57,6 +57,7 @@ const RegistreBorne & RegistreBorne::operator= (const RegistreBorne& p_registreB
     {
       effaceLeRegistre ();
       copierLeRegistre (p_registreBorne);
+      m_nomRegistreBorne = p_registreBorne.m_nomRegistreBorne;
     }
   INVARIANTS ();
   return *this;
