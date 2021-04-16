@@ -14,6 +14,11 @@
 
 using namespace bornesQuebec;
 
+/**
+ * \class BorneTest
+ * \brief réimplémentation de la classe abstraite Borne
+ * pour permettre la création d'objet borne pour les test
+ */
 class BorneTest : public Borne
 {
 public:
@@ -70,7 +75,8 @@ TEST (Borne, ConstructeurInvalideNomTopographique)
 }
 
 /**
- *\brief Creation d'une fixture a utiliser pour les methodes publiques de la classe de test
+ *\class uneBorne
+ *\brief Creation d'une fixture a utiliser pour les methodes publiques de la classe Borne
  *
  */
 class uneBorne : public ::testing::Test

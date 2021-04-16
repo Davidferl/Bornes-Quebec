@@ -52,7 +52,8 @@ TEST (BorneFontaine, ConstructeurVilleInvalide)
 }
 
 /**
- *\brief Creation d'une fixture a utiliser pour les methodes publiques de la classe de test
+ * \class uneBorneFontaine
+ * \brief Creation d'une fixture à utiliser pour les methodes publiques de la classe BorneFontaine
  *
  */
 class uneBorneFontaine : public ::testing::Test

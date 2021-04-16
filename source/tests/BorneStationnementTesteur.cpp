@@ -69,7 +69,8 @@ TEST (BorneStationnement, ConstructeurInvalideCoteRue)
 }
 
 /**
- *\brief Creation d'une fixture a utiliser pour les methodes publiques de la classe de test
+ * \class uneBorneStationnement
+ * \brief Creation d'une fixture a utiliser pour les methodes publiques de la classe BorneStationnement
  *
  */
 class uneBorneStationnement : public ::testing::Test
