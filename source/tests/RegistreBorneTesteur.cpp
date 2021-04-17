@@ -124,7 +124,7 @@ TEST_F (RegistreBorneFixture, supprimeBorneAbsenteThrow)
 
 /**
  * \test Test de la méthode supprimer borne
- *      Cas valide: verifier que la borne 
+ *      Cas valide: verifier que la borne à été supprimé
  *      Cas invalide: aucun
  */
 TEST_F (RegistreBorneFixture, supprimerBorne)
