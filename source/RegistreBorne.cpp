@@ -8,6 +8,8 @@
 
 
 #include "RegistreBorne.h"
+#include "BorneException.h"
+#include <iostream>
 #include <sstream>
 
 using namespace bornesQuebec;
@@ -74,9 +76,33 @@ RegistreBorne::borneEstDejaPresente (const Borne & p_borne) const
 {
   bool bornePresente = false;
   std::vector<Borne*>::const_iterator it;
-  for (it = m_vBornes.begin (); it != m_vBornes.end (); it++)
+  for (it = m_vBornes.begin (); it < m_vBornes.end (); it++)
     {
       if ((*it)->reqIdentifiant () == p_borne.reqIdentifiant ())
+        {
+          bornePresente = true;
+        }
+      else
+        {
+          bornePresente = false;
+        }
+    }
+  return bornePresente;
+}
+
+/**
+ * \brief Vérifie si l'identifiant passé en paramètre est dans le vecteur de l'objet courant
+ * \param[in] p_identifiant identifiant de borne que l'on veut verifier
+ * \return Un booléens qui indique si l'identifiant de borne est dans le vecteur
+ */
+bool
+RegistreBorne::borneEstDejaPresenteID (int p_identifiant) const
+{
+  bool bornePresente = false;
+  std::vector<Borne*>::const_iterator it;
+  for (it = m_vBornes.begin (); it < m_vBornes.end (); it++)
+    {
+      if ((*it)->reqIdentifiant () == p_identifiant)
         {
           bornePresente = true;
         }
@@ -92,17 +118,23 @@ RegistreBorne::borneEstDejaPresente (const Borne & p_borne) const
  * \brief Ajoute un objet Borne dans le vecteur de l'objet courant
  * \param[in] p_borne objet Borne que l'on veut ajouter
  */
-
 void
 RegistreBorne::ajouteBorne (const Borne& p_borne)
 {
-  if (RegistreBorne::borneEstDejaPresente (p_borne) == true)
+  try
     {
-
+      if (RegistreBorne::borneEstDejaPresente (p_borne) == true)
+        {
+          throw BorneDejaPresenteException ("Impossible d'ajouter cette borne car elle est deja presente dans le registre");
+        }
+      else
+        {
+          m_vBornes.push_back (p_borne.clone ());
+        }
     }
-  else
+  catch (BorneDejaPresenteException& e)
     {
-      m_vBornes.push_back (p_borne.clone ());
+      std::cout << e.what ();
     }
 
 }
@@ -115,7 +147,7 @@ void
 RegistreBorne::effaceLeRegistre ()
 {
   std::vector<Borne*>::const_iterator it;
-  for (it = m_vBornes.begin (); it != m_vBornes.end (); it++)
+  for (it = m_vBornes.begin (); it < m_vBornes.end (); it++)
     {
       delete (*it);
     }
@@ -130,7 +162,7 @@ void
 RegistreBorne::copierLeRegistre (const RegistreBorne& p_registreBorne)
 {
   std::vector<Borne*>::const_iterator it;
-  for (it = p_registreBorne.m_vBornes.begin (); it != p_registreBorne.m_vBornes.end (); it++)
+  for (it = p_registreBorne.m_vBornes.begin (); it < p_registreBorne.m_vBornes.end (); it++)
 
     {
       ajouteBorne (*(*it));
@@ -157,12 +189,45 @@ RegistreBorne::reqRegistreBorneFormate ()
   std::ostringstream os;
   os << "Registre : " << reqNomRegistreBorne () << std::endl;
   std::vector<Borne*>::const_iterator it;
-  for (it = m_vBornes.begin (); it != m_vBornes.end (); it++)
+  for (it = m_vBornes.begin (); it < m_vBornes.end (); it++)
     {
       os << (*it)->reqBorneFormate ();
       os << "----------------------------------------------\n";
     }
   return os.str ();
+}
+
+/**
+ * \brief methode qui prend un identifiant de borne en entrée et qui supprime la borne du registre
+ * \param[in] p_identifiant
+ *
+ */
+void
+RegistreBorne::supprimeBorne (int p_identifiant)
+{
+  try
+    {
+      if (borneEstDejaPresenteID (p_identifiant) == false)
+        {
+          throw BorneAbsenteException ("Impossible de supprimer la borne car elle n'est pas dans le registre");
+        }
+      else
+        {
+          std::vector<Borne*>::const_iterator it;
+          for (it = m_vBornes.begin (); it < m_vBornes.end (); it++)
+            {
+              if ((*it)->reqIdentifiant () == p_identifiant)
+                {
+                  delete (*it);
+                  it = m_vBornes.erase (it);
+                }
+            }
+        }
+    }
+  catch (BorneAbsenteException& e)
+    {
+      std::cout << e.what ();
+    }
 }
 
 /**

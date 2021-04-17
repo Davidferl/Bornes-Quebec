@@ -19,7 +19,8 @@ build/Debug/GNU-Linux/tests/tests/RegistreBorneTesteur.o: \
  /usr/src/gtest/include/gtest/gtest-test-part.h \
  /usr/src/gtest/include/gtest/gtest-typed-test.h \
  /usr/src/gtest/include/gtest/gtest_pred_impl.h RegistreBorne.h Borne.h \
- ContratException.h validationFormat.h ContratException.h BorneFontaine.h
+ ContratException.h validationFormat.h BorneException.h \
+ ContratException.h BorneFontaine.h
 
 /usr/src/gtest/include/gtest/gtest.h:
 
@@ -68,6 +69,8 @@ Borne.h:
 ContratException.h:
 
 validationFormat.h:
+
+BorneException.h:
 
 ContratException.h:
 

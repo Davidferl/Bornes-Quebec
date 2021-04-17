@@ -10,6 +10,7 @@
 #include <iostream>
 #include <gtest/gtest.h>
 #include "RegistreBorne.h"
+#include "BorneException.h"
 #include "ContratException.h"
 #include "BorneFontaine.h"
 
@@ -112,6 +113,25 @@ TEST_F (RegistreBorneFixture, OperateurAssignation)
 
 /*TEST_F (RegistreBorneFixture, ajouteBorneDejaPresenteThrow)
 {
-RegistreBorneNomValide.ajouteBorne (uneBorneFontaine);
-ASSERT_THROW (RegistreBorneNomValide.ajouteBorne (uneBorneFontaine), BorneEstDejaPresenteException);
+  RegistreBorneNomValide.ajouteBorne (uneBorneFontaine);
+  ASSERT_THROW (RegistreBorneNomValide.ajouteBorne (uneBorneFontaine), BorneDejaPresenteException);
+}
+
+TEST_F (RegistreBorneFixture, supprimeBorneAbsenteThrow)
+{
+  ASSERT_THROW (RegistreBorneNomValide.supprimeBorne (387), BorneAbsenteException);
 }*/
+
+/**
+ * \test Test de la méthode supprimer borne
+ *      Cas valide: verifier que la borne 
+ *      Cas invalide: aucun
+ */
+TEST_F (RegistreBorneFixture, supprimerBorne)
+{
+  RegistreBorneNomValide.ajouteBorne (uneBorneFontaine);
+  ASSERT_EQ (RegistreBorneNomValide.reqRegistreBorneFormate (),
+             "Registre : premierRegistre\n" + uneBorneFontaine.reqBorneFormate () + "----------------------------------------------\n");
+  RegistreBorneNomValide.supprimeBorne (312);
+  ASSERT_EQ ("Registre : premierRegistre\n", RegistreBorneNomValide.reqRegistreBorneFormate ());
+}

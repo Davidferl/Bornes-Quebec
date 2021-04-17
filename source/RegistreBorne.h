@@ -28,12 +28,14 @@ namespace bornesQuebec
     const std::string& reqNomRegistreBorne () const;
     void ajouteBorne (const Borne& p_borne);
     std::string reqRegistreBorneFormate ();
+    void supprimeBorne (int p_identifiant);
 
 
   private:
     std::string m_nomRegistreBorne;
     std::vector<Borne*> m_vBornes;
     bool borneEstDejaPresente (const Borne& p_borne) const;
+    bool borneEstDejaPresenteID (int p_identifiant) const;
     void effaceLeRegistre ();
     void copierLeRegistre (const RegistreBorne& p_registreBorne);
     void verifieInvariant () const;
