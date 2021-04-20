@@ -201,28 +201,22 @@ RegistreBorne::reqRegistreBorneFormate ()
 void
 RegistreBorne::supprimeBorne (int p_identifiant)
 {
-  try
+
+  if (borneEstDejaPresenteID (p_identifiant) == false)
     {
-      if (borneEstDejaPresenteID (p_identifiant) == false)
+      throw BorneAbsenteException ("Impossible de supprimer la borne car elle n'est pas dans le registre");
+    }
+  else
+    {
+      std::vector<Borne*>::const_iterator it;
+      for (it = m_vBornes.begin (); it < m_vBornes.end (); it++)
         {
-          throw BorneAbsenteException ("Impossible de supprimer la borne car elle n'est pas dans le registre");
-        }
-      else
-        {
-          std::vector<Borne*>::const_iterator it;
-          for (it = m_vBornes.begin (); it < m_vBornes.end (); it++)
+          if ((*it)->reqIdentifiant () == p_identifiant)
             {
-              if ((*it)->reqIdentifiant () == p_identifiant)
-                {
-                  delete (*it);
-                  it = m_vBornes.erase (it);
-                }
+              delete (*it);
+              it = m_vBornes.erase (it);
             }
         }
-    }
-  catch (BorneAbsenteException& e)
-    {
-      std::cout << e.what ();
     }
 }
 

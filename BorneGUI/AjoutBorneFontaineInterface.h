@@ -23,13 +23,6 @@ class AjoutBorneFontaineInterface : public QDialog
 public:
   AjoutBorneFontaineInterface ();
   virtual ~AjoutBorneFontaineInterface ();
-  int reqIdentifiant () const;
-  QString reqDirection () const;
-  QString reqNomTopographique () const;
-  double reqLongitude () const;
-  double reqLatitude () const;
-  QString reqVille () const;
-  QString reqArrondissement () const;
   bornesQuebec::Borne* reqBorne () const;
 
 public slots:

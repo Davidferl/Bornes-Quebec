@@ -23,48 +23,6 @@ AjoutBorneFontaineInterface::AjoutBorneFontaineInterface ()
 
 AjoutBorneFontaineInterface::~AjoutBorneFontaineInterface () { }
 
-int
-AjoutBorneFontaineInterface::reqIdentifiant () const
-{
-  return widget.spinBoxIdentifiant->value ();
-}
-
-QString
-AjoutBorneFontaineInterface::reqDirection () const
-{
-  return widget.lineEditDirection->text ();
-}
-
-QString
-AjoutBorneFontaineInterface::reqNomTopographique () const
-{
-  return widget.lineEditNomTopographique->text ();
-}
-
-double
-AjoutBorneFontaineInterface::reqLongitude () const
-{
-  return widget.doubleSpinBoxLongitude->value ();
-}
-
-double
-AjoutBorneFontaineInterface::reqLatitude () const
-{
-  return widget.doubleSpinBoxLatitude->value ();
-}
-
-QString
-AjoutBorneFontaineInterface::reqVille () const
-{
-  return widget.lineEditVille->text ();
-}
-
-QString
-AjoutBorneFontaineInterface::reqArrondissement () const
-{
-  return widget.lineEditArrondissement->text ();
-}
-
 Borne*
 AjoutBorneFontaineInterface::reqBorne () const
 {

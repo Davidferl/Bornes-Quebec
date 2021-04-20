@@ -7,6 +7,7 @@
       <itemPath>AjoutBorneFontaineInterface.h</itemPath>
       <itemPath>AjoutBorneStatInterface.h</itemPath>
       <itemPath>MWborneGUI.h</itemPath>
+      <itemPath>SupprimeBorneInterface.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -14,6 +15,7 @@
       <itemPath>AjoutBorneFontaineInterface.ui</itemPath>
       <itemPath>AjoutBorneStatInterface.ui</itemPath>
       <itemPath>MWborneGUI.ui</itemPath>
+      <itemPath>SupprimeBorneInterface.ui</itemPath>
     </logicalFolder>
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
@@ -21,6 +23,7 @@
       <itemPath>AjoutBorneFontaineInterface.cpp</itemPath>
       <itemPath>AjoutBorneStatInterface.cpp</itemPath>
       <itemPath>MWborneGUI.cpp</itemPath>
+      <itemPath>SupprimeBorneInterface.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
@@ -87,6 +90,12 @@
       </item>
       <item path="MWborneGUI.ui" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="SupprimeBorneInterface.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SupprimeBorneInterface.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SupprimeBorneInterface.ui" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
@@ -131,6 +140,12 @@
       <item path="MWborneGUI.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="MWborneGUI.ui" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SupprimeBorneInterface.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="SupprimeBorneInterface.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="SupprimeBorneInterface.ui" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>

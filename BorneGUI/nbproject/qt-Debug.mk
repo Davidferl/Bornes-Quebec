@@ -55,16 +55,20 @@ OBJECTS_DIR   = build/Debug/GNU-Linux/
 SOURCES       = AjoutBorneFontaineInterface.cpp \
 		AjoutBorneStatInterface.cpp \
 		MWborneGUI.cpp \
+		SupprimeBorneInterface.cpp \
 		main.cpp moc_AjoutBorneFontaineInterface.cpp \
 		moc_AjoutBorneStatInterface.cpp \
-		moc_MWborneGUI.cpp
+		moc_MWborneGUI.cpp \
+		moc_SupprimeBorneInterface.cpp
 OBJECTS       = build/Debug/GNU-Linux/AjoutBorneFontaineInterface.o \
 		build/Debug/GNU-Linux/AjoutBorneStatInterface.o \
 		build/Debug/GNU-Linux/MWborneGUI.o \
+		build/Debug/GNU-Linux/SupprimeBorneInterface.o \
 		build/Debug/GNU-Linux/main.o \
 		build/Debug/GNU-Linux/moc_AjoutBorneFontaineInterface.o \
 		build/Debug/GNU-Linux/moc_AjoutBorneStatInterface.o \
-		build/Debug/GNU-Linux/moc_MWborneGUI.o
+		build/Debug/GNU-Linux/moc_MWborneGUI.o \
+		build/Debug/GNU-Linux/moc_SupprimeBorneInterface.o
 DIST          = /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/common/unix.conf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/common/linux.conf \
@@ -126,6 +130,7 @@ DIST          = /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/qt_config.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++/qmake.conf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_post.prf \
+		nbproject/.qmake.stash \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/exclusive_builds.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/toolchain.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/default_pre.prf \
@@ -146,9 +151,11 @@ DIST          = /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/lex.prf \
 		nbproject/nbproject/qt-Debug.pro AjoutBorneFontaineInterface.h \
 		AjoutBorneStatInterface.h \
-		MWborneGUI.h AjoutBorneFontaineInterface.cpp \
+		MWborneGUI.h \
+		SupprimeBorneInterface.h AjoutBorneFontaineInterface.cpp \
 		AjoutBorneStatInterface.cpp \
 		MWborneGUI.cpp \
+		SupprimeBorneInterface.cpp \
 		main.cpp
 QMAKE_TARGET  = BorneGUI
 DESTDIR       = dist/Debug/GNU-Linux/
@@ -158,7 +165,7 @@ TARGET        = dist/Debug/GNU-Linux/BorneGUI
 first: all
 ####### Build rules
 
-dist/Debug/GNU-Linux/BorneGUI: ui_AjoutBorneFontaineInterface.h ui_AjoutBorneStatInterface.h ui_MWborneGUI.h $(OBJECTS)  
+dist/Debug/GNU-Linux/BorneGUI: ui_AjoutBorneFontaineInterface.h ui_AjoutBorneStatInterface.h ui_MWborneGUI.h ui_SupprimeBorneInterface.h $(OBJECTS)  
 	@test -d dist/Debug/GNU-Linux/ || mkdir -p dist/Debug/GNU-Linux/
 	$(LINK) $(LFLAGS) -o $(TARGET) $(OBJECTS) $(OBJCOMP) $(LIBS)
 
@@ -223,6 +230,7 @@ qttmp-Debug.mk: nbproject/qt-Debug.pro /usr/lib/x86_64-linux-gnu/qt5/mkspecs/lin
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/qt_config.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++/qmake.conf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/exclusive_builds.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/toolchain.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/default_pre.prf \
@@ -304,6 +312,7 @@ qttmp-Debug.mk: nbproject/qt-Debug.pro /usr/lib/x86_64-linux-gnu/qt5/mkspecs/lin
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/qt_config.prf:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++/qmake.conf:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_post.prf:
+.qmake.stash:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/exclusive_builds.prf:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/toolchain.prf:
 /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/default_pre.prf:
@@ -338,9 +347,9 @@ distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
 	$(COPY_FILE) --parents /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/data/dummy.cpp $(DISTDIR)/
-	$(COPY_FILE) --parents AjoutBorneFontaineInterface.h AjoutBorneStatInterface.h MWborneGUI.h $(DISTDIR)/
-	$(COPY_FILE) --parents AjoutBorneFontaineInterface.cpp AjoutBorneStatInterface.cpp MWborneGUI.cpp main.cpp $(DISTDIR)/
-	$(COPY_FILE) --parents AjoutBorneFontaineInterface.ui AjoutBorneStatInterface.ui MWborneGUI.ui $(DISTDIR)/
+	$(COPY_FILE) --parents AjoutBorneFontaineInterface.h AjoutBorneStatInterface.h MWborneGUI.h SupprimeBorneInterface.h $(DISTDIR)/
+	$(COPY_FILE) --parents AjoutBorneFontaineInterface.cpp AjoutBorneStatInterface.cpp MWborneGUI.cpp SupprimeBorneInterface.cpp main.cpp $(DISTDIR)/
+	$(COPY_FILE) --parents AjoutBorneFontaineInterface.ui AjoutBorneStatInterface.ui MWborneGUI.ui SupprimeBorneInterface.ui $(DISTDIR)/
 
 
 clean: compiler_clean 
@@ -372,9 +381,9 @@ compiler_moc_predefs_clean:
 moc_predefs.h: /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/data/dummy.cpp
 	g++ -pipe -g -Wall -W -dM -E -o moc_predefs.h /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/data/dummy.cpp
 
-compiler_moc_header_make_all: moc_AjoutBorneFontaineInterface.cpp moc_AjoutBorneStatInterface.cpp moc_MWborneGUI.cpp
+compiler_moc_header_make_all: moc_AjoutBorneFontaineInterface.cpp moc_AjoutBorneStatInterface.cpp moc_MWborneGUI.cpp moc_SupprimeBorneInterface.cpp
 compiler_moc_header_clean:
-	-$(DEL_FILE) moc_AjoutBorneFontaineInterface.cpp moc_AjoutBorneStatInterface.cpp moc_MWborneGUI.cpp
+	-$(DEL_FILE) moc_AjoutBorneFontaineInterface.cpp moc_AjoutBorneStatInterface.cpp moc_MWborneGUI.cpp moc_SupprimeBorneInterface.cpp
 moc_AjoutBorneFontaineInterface.cpp: AjoutBorneFontaineInterface.h \
 		ui_AjoutBorneFontaineInterface.h \
 		../source/BorneFontaine.h \
@@ -406,13 +415,19 @@ moc_MWborneGUI.cpp: MWborneGUI.h \
 		/usr/lib/qt5/bin/moc
 	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/etudiant/Bureau/TP/TP3/BorneGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/etudiant/Bureau/TP/TP3/BorneGUI/nbproject -I/home/etudiant/Bureau/TP/TP3/BorneGUI/source -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/9 -I/usr/include/x86_64-linux-gnu/c++/9 -I/usr/include/c++/9/backward -I/usr/lib/gcc/x86_64-linux-gnu/9/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include MWborneGUI.h -o moc_MWborneGUI.cpp
 
+moc_SupprimeBorneInterface.cpp: SupprimeBorneInterface.h \
+		ui_SupprimeBorneInterface.h \
+		moc_predefs.h \
+		/usr/lib/qt5/bin/moc
+	/usr/lib/qt5/bin/moc $(DEFINES) --include /home/etudiant/Bureau/TP/TP3/BorneGUI/moc_predefs.h -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -I/home/etudiant/Bureau/TP/TP3/BorneGUI/nbproject -I/home/etudiant/Bureau/TP/TP3/BorneGUI/source -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/9 -I/usr/include/x86_64-linux-gnu/c++/9 -I/usr/include/c++/9/backward -I/usr/lib/gcc/x86_64-linux-gnu/9/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include SupprimeBorneInterface.h -o moc_SupprimeBorneInterface.cpp
+
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:
 compiler_moc_source_make_all:
 compiler_moc_source_clean:
-compiler_uic_make_all: ui_AjoutBorneFontaineInterface.h ui_AjoutBorneStatInterface.h ui_MWborneGUI.h
+compiler_uic_make_all: ui_AjoutBorneFontaineInterface.h ui_AjoutBorneStatInterface.h ui_MWborneGUI.h ui_SupprimeBorneInterface.h
 compiler_uic_clean:
-	-$(DEL_FILE) ui_AjoutBorneFontaineInterface.h ui_AjoutBorneStatInterface.h ui_MWborneGUI.h
+	-$(DEL_FILE) ui_AjoutBorneFontaineInterface.h ui_AjoutBorneStatInterface.h ui_MWborneGUI.h ui_SupprimeBorneInterface.h
 ui_AjoutBorneFontaineInterface.h: AjoutBorneFontaineInterface.ui \
 		/usr/lib/qt5/bin/uic
 	/usr/lib/qt5/bin/uic AjoutBorneFontaineInterface.ui -o ui_AjoutBorneFontaineInterface.h
@@ -424,6 +439,10 @@ ui_AjoutBorneStatInterface.h: AjoutBorneStatInterface.ui \
 ui_MWborneGUI.h: MWborneGUI.ui \
 		/usr/lib/qt5/bin/uic
 	/usr/lib/qt5/bin/uic MWborneGUI.ui -o ui_MWborneGUI.h
+
+ui_SupprimeBorneInterface.h: SupprimeBorneInterface.ui \
+		/usr/lib/qt5/bin/uic
+	/usr/lib/qt5/bin/uic SupprimeBorneInterface.ui -o ui_SupprimeBorneInterface.h
 
 compiler_yacc_decl_make_all:
 compiler_yacc_decl_clean:
@@ -463,8 +482,14 @@ build/Debug/GNU-Linux/MWborneGUI.o: MWborneGUI.cpp MWborneGUI.h \
 		AjoutBorneStatInterface.h \
 		ui_AjoutBorneStatInterface.h \
 		../source/BorneStationnement.h \
+		SupprimeBorneInterface.h \
+		ui_SupprimeBorneInterface.h \
 		../source/BorneException.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/Debug/GNU-Linux/MWborneGUI.o MWborneGUI.cpp
+
+build/Debug/GNU-Linux/SupprimeBorneInterface.o: SupprimeBorneInterface.cpp SupprimeBorneInterface.h \
+		ui_SupprimeBorneInterface.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/Debug/GNU-Linux/SupprimeBorneInterface.o SupprimeBorneInterface.cpp
 
 build/Debug/GNU-Linux/main.o: main.cpp MWborneGUI.h \
 		ui_MWborneGUI.h \
@@ -483,6 +508,9 @@ build/Debug/GNU-Linux/moc_AjoutBorneStatInterface.o: moc_AjoutBorneStatInterface
 
 build/Debug/GNU-Linux/moc_MWborneGUI.o: moc_MWborneGUI.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/Debug/GNU-Linux/moc_MWborneGUI.o moc_MWborneGUI.cpp
+
+build/Debug/GNU-Linux/moc_SupprimeBorneInterface.o: moc_SupprimeBorneInterface.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/Debug/GNU-Linux/moc_SupprimeBorneInterface.o moc_SupprimeBorneInterface.cpp
 
 ####### Install
 

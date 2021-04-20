@@ -77,6 +77,7 @@ public:
         QObject::connect(actionQuitter, SIGNAL(triggered()), MWborneGUI, SLOT(close()));
         QObject::connect(actionBorne_Fontaine, SIGNAL(triggered()), MWborneGUI, SLOT(dialogAjoutBorneFontaine()));
         QObject::connect(actionBorne_de_Stationnement, SIGNAL(triggered()), MWborneGUI, SLOT(dialogAjoutBorneStat()));
+        QObject::connect(actionSupprimer_une_borne, SIGNAL(triggered()), MWborneGUI, SLOT(dialogSupprimerBorne()));
 
         QMetaObject::connectSlotsByName(MWborneGUI);
     } // setupUi

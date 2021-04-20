@@ -10,6 +10,7 @@
 #include "BorneFontaine.h"
 #include "AjoutBorneFontaineInterface.h"
 #include "AjoutBorneStatInterface.h"
+#include "SupprimeBorneInterface.h"
 #include <string>
 #include "BorneException.h"
 #include <QMessageBox>
@@ -22,9 +23,6 @@ MWborneGUI::MWborneGUI (QWidget *parent) : QMainWindow (parent), m_registre ("Re
 {
   widget.setupUi (this);
   afficherRegistre (m_registre);
-
-
-
 
 }
 
@@ -85,4 +83,21 @@ MWborneGUI::dialogAjoutBorneStat ()
 }
 
 void
-MWborneGUI::dialogSupprimerBorne () { }
+MWborneGUI::dialogSupprimerBorne ()
+{
+  SupprimeBorneInterface saisieBorneSupprime;
+  if (saisieBorneSupprime.exec () == QDialog::Accepted)
+    {
+      try
+        {
+          int ID = saisieBorneSupprime.reqIdentifiant ();
+          m_registre.supprimeBorne (ID);
+        }
+      catch (BorneAbsenteException& e)
+        {
+          QString message = e.what ();
+          QMessageBox::information (this, "ERREUR", message);
+        }
+    }
+  afficherRegistre (m_registre);
+}

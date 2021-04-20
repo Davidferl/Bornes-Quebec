@@ -123,9 +123,26 @@
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>actionSupprimer_une_borne</sender>
+   <signal>triggered()</signal>
+   <receiver>MWborneGUI</receiver>
+   <slot>dialogSupprimerBorne()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>dialogAjoutBorneFontaine()</slot>
   <slot>dialogAjoutBorneStat()</slot>
+  <slot>dialogSupprimerBorne()</slot>
  </slots>
 </ui>
