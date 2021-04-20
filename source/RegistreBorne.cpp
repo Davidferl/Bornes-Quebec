@@ -121,21 +121,17 @@ RegistreBorne::borneEstDejaPresenteID (int p_identifiant) const
 void
 RegistreBorne::ajouteBorne (const Borne& p_borne)
 {
-  try
+
+
+  if (RegistreBorne::borneEstDejaPresente (p_borne) == true)
     {
-      if (RegistreBorne::borneEstDejaPresente (p_borne) == true)
-        {
-          throw BorneDejaPresenteException ("Impossible d'ajouter cette borne car elle est deja presente dans le registre");
-        }
-      else
-        {
-          m_vBornes.push_back (p_borne.clone ());
-        }
+      throw BorneDejaPresenteException ("Impossible d'ajouter cette borne car elle est deja presente dans le registre");
     }
-  catch (BorneDejaPresenteException& e)
+  else
     {
-      std::cout << e.what ();
+      m_vBornes.push_back (p_borne.clone ());
     }
+
 
 }
 

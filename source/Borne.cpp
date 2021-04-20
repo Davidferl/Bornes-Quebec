@@ -34,7 +34,7 @@ m_longitude (p_longitude), m_latitude (p_latitude)
 {
   PRECONDITION (p_identifiant > 0);
   PRECONDITION (util::validerPointCardinal (p_direction) == true);
-  PRECONDITION (!p_nomTopographique.empty ())
+  PRECONDITION (!p_nomTopographique.empty ());
 
   POSTCONDITION (m_identifiant == p_identifiant);
   POSTCONDITION (m_direction == p_direction);
@@ -116,9 +116,10 @@ std::string
 Borne::reqBorneFormate () const
 {
   std::ostringstream os;
-  os << "Identifiant de la borne    : " << reqIdentifiant () << "\n" << "Direction           : "
-          << reqDirection () << "\n" << "Nom Topographique   : " << reqNomTopographique () << "\n"
-          << "Longitude           : " << reqLongitude () << "\n" << "Latitude            : " << reqLatitude () << "\n";
+  os << "Identifiant de la borne : " << reqIdentifiant () << "\n" << "Direction                           : "
+          << reqDirection () << "\n" << "Nom Topographique     : " << reqNomTopographique () << "\n"
+          << "Longitude                         : " << reqLongitude () << "\n"
+          << "Latitude                             : " << reqLatitude () << "\n";
 
   return os.str ();
 

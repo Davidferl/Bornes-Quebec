@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MWborneGUI</class>
+ <widget class="QMainWindow" name="MWborneGUI">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MWborneGUI</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QListWidget" name="listWidgetRegistre">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>11</y>
+      <width>791</width>
+      <height>551</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuMenu">
+    <property name="title">
+     <string>Opérations</string>
+    </property>
+    <widget class="QMenu" name="menuAjout_d_une_borne_au_registre">
+     <property name="title">
+      <string>Ajout d'une borne au registre</string>
+     </property>
+     <addaction name="actionBorne_Fontaine"/>
+     <addaction name="actionBorne_de_Stationnement"/>
+    </widget>
+    <addaction name="menuAjout_d_une_borne_au_registre"/>
+    <addaction name="actionSupprimer_une_borne"/>
+    <addaction name="actionQuitter"/>
+   </widget>
+   <addaction name="menuMenu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionSupprimer_une_borne">
+   <property name="text">
+    <string>Supprimer une borne</string>
+   </property>
+  </action>
+  <action name="actionQuitter">
+   <property name="text">
+    <string>Quitter</string>
+   </property>
+  </action>
+  <action name="actionBorne_Fontaine">
+   <property name="text">
+    <string>Borne Fontaine</string>
+   </property>
+  </action>
+  <action name="actionBorne_de_Stationnement">
+   <property name="text">
+    <string>Borne de Stationnement</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>actionQuitter</sender>
+   <signal>triggered()</signal>
+   <receiver>MWborneGUI</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionBorne_Fontaine</sender>
+   <signal>triggered()</signal>
+   <receiver>MWborneGUI</receiver>
+   <slot>dialogAjoutBorneFontaine()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionBorne_de_Stationnement</sender>
+   <signal>triggered()</signal>
+   <receiver>MWborneGUI</receiver>
+   <slot>dialogAjoutBorneStat()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>dialogAjoutBorneFontaine()</slot>
+  <slot>dialogAjoutBorneStat()</slot>
+ </slots>
+</ui>

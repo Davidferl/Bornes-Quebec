@@ -93,8 +93,8 @@ BorneFontaine::reqBorneFormate () const
   os << "Borne-fontaine" << std::endl;
   os << "----------------------------------------------" << std::endl;
   os << Borne::reqBorneFormate ();
-  os << "Ville               : " << reqVille () << std::endl;
-  os << "Arrondissement      : " << reqArrondissement () << std::endl;
+  os << "Ville                                     : " << reqVille () << std::endl;
+  os << "Arrondissement              : " << reqArrondissement () << std::endl;
   return os.str ();
 }
 

@@ -127,10 +127,10 @@ BorneStationnement::reqBorneFormate () const
   os << "Borne de stationnement" << std::endl;
   os << "----------------------------------------------" << std::endl;
   os << Borne::reqBorneFormate ();
-  os << "Distance mesuree    : " << reqLectureMetrique () << std::endl;
-  os << "Segment de rue      : " << reqSegmentRue () << std::endl;
-  os << "Numero de la borne  : " << reqNumBorne () << std::endl;
-  os << "Cote de la rue      : " << reqCoteRue () << std::endl;
+  os << "Distance mesuree          : " << reqLectureMetrique () << std::endl;
+  os << "Segment de rue              : " << reqSegmentRue () << std::endl;
+  os << "Numero de la borne      : " << reqNumBorne () << std::endl;
+  os << "Cote de la rue                  : " << reqCoteRue () << std::endl;
   return os.str ();
 }
 
