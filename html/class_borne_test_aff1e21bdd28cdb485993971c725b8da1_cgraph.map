@@ -1,0 +1,9 @@
+<map id="BorneTest::reqBorneFormate" name="BorneTest::reqBorneFormate">
+<area shape="rect" id="node1" title="Retourne une chaine de caractère qui contient l&#39;information de l&#39;objet Borne." alt="" coords="5,143,212,170"/>
+<area shape="rect" id="node2" href="$classbornes_quebec_1_1_borne.html#adeccf486d5bb87ac3f240c11625c9b0a" title="Retourne une chaine de caractère qui contient l&#39;information de l&#39;objet Borne." alt="" coords="260,136,421,177"/>
+<area shape="rect" id="node3" href="$classbornes_quebec_1_1_borne.html#a031ab90aa8c6cbd135625a90435cc8ae" title="Acesseur pour la direction." alt="" coords="477,5,639,47"/>
+<area shape="rect" id="node4" href="$classbornes_quebec_1_1_borne.html#a0e70280f31bcead3218da64adc3f5660" title="Acesseur pour l&#39;identifiant de la borne." alt="" coords="477,71,639,112"/>
+<area shape="rect" id="node5" href="$classbornes_quebec_1_1_borne.html#a008a75f38f5552ff8ebe87ebb5d0711f" title="Acesseur pour la latitude de la borne." alt="" coords="477,136,639,177"/>
+<area shape="rect" id="node6" href="$classbornes_quebec_1_1_borne.html#a37e65cf6d1bbc957f33271b1d11f87b3" title="Acesseur pour la longitude de la borne." alt="" coords="477,201,639,243"/>
+<area shape="rect" id="node7" href="$classbornes_quebec_1_1_borne.html#a8abae9caa519a4d472b03dd9f179e54a" title="Acesseur pour le nom topographique." alt="" coords="469,267,647,308"/>
+</map>

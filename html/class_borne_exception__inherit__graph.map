@@ -1,0 +1,6 @@
+<map id="BorneException" name="BorneException">
+<area shape="rect" id="node1" title="Déclaration de la classe BorneException Cette classe hérite de runtime_error et crée des exceptions p..." alt="" coords="141,80,265,107"/>
+<area shape="rect" id="node3" href="$class_borne_absente_exception.html" title="Déclaration de la classe AbsenteException Cette classe hérite de BorneException et crée des exception..." alt="" coords="5,155,183,181"/>
+<area shape="rect" id="node4" href="$class_borne_deja_presente_exception.html" title="Déclaration de la classe BorneDejaPresenteException Cette classe hérite de BorneException et crée des..." alt="" coords="207,155,418,181"/>
+<area shape="rect" id="node2" title=" " alt="" coords="134,5,273,32"/>
+</map>

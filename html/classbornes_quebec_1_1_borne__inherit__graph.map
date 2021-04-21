@@ -1,0 +1,6 @@
+<map id="bornesQuebec::Borne" name="bornesQuebec::Borne">
+<area shape="rect" id="node1" title=" " alt="" coords="295,5,456,32"/>
+<area shape="rect" id="node2" href="$classbornes_quebec_1_1_borne_fontaine.html" title=" " alt="" coords="5,80,223,107"/>
+<area shape="rect" id="node3" href="$classbornes_quebec_1_1_borne_stationnement.html" title=" " alt="" coords="247,80,504,107"/>
+<area shape="rect" id="node4" href="$class_borne_test.html" title="réimplémentation de la classe abstraite Borne pour permettre la création d&#39;objet borne pour les test" alt="" coords="528,80,615,107"/>
+</map>

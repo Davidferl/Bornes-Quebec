@@ -1,0 +1,4 @@
+<map id="AjoutBorneStatInterface::reqBorne" name="AjoutBorneStatInterface::reqBorne">
+<area shape="rect" id="node1" title="Accesseur pour un objet Borne Crée un objet borneStationnement avec les informations entrées dans la ..." alt="" coords="308,5,487,47"/>
+<area shape="rect" id="node2" href="$class_m_wborne_g_u_i.html#aef411d3ec9d3835ac9d74ef3477b53ea" title="Slot qui récupère un objet Borne Stationnement et l&#39;ajoute à l&#39;attribut m_registre." alt="" coords="5,13,260,39"/>
+</map>

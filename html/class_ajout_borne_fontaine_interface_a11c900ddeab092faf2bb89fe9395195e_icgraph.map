@@ -1,0 +1,4 @@
+<map id="AjoutBorneFontaineInterface::reqBorne" name="AjoutBorneFontaineInterface::reqBorne">
+<area shape="rect" id="node1" title="Accesseur pour un objet Borne Crée un objet borneStationnement avec les informations entrées dans la ..." alt="" coords="281,5,489,47"/>
+<area shape="rect" id="node2" href="$class_m_wborne_g_u_i.html#affd84fff963831b94e7a7c4e8e60f0ce" title="Slot qui récupère un objet Borne Fontaine et l&#39;ajoute à l&#39;attribut m_registre." alt="" coords="5,5,233,47"/>
+</map>

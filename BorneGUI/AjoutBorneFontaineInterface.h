@@ -1,14 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/*
- * File:   AjoutBorneFontaineInterface.h
- * Author: etudiant
- *
- * Created on 19 avril 2021, 20:47
+/**
+ * \file   AjoutBorneFontaineInterface.h
+ * \brief  Prototype de la classe AjoutBorneFontaineInterface
+ * \author David Ferland
+ * \version 0.1
+ * \date 18 avril 2021
  */
 
 #ifndef _AJOUTBORNEFONTAINEINTERFACE_H

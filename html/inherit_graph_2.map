@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,116,57"/>
+<area shape="rect" id="node2" href="$class_borne_exception.html" title="Déclaration de la classe BorneException Cette classe hérite de runtime_error et crée des exceptions p..." alt="" coords="164,31,288,57"/>
+<area shape="rect" id="node3" href="$class_borne_absente_exception.html" title="Déclaration de la classe AbsenteException Cette classe hérite de BorneException et crée des exception..." alt="" coords="353,5,530,32"/>
+<area shape="rect" id="node4" href="$class_borne_deja_presente_exception.html" title="Déclaration de la classe BorneDejaPresenteException Cette classe hérite de BorneException et crée des..." alt="" coords="336,56,547,83"/>
+</map>

@@ -1,14 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/*
- * File:   SupprimeBorneInterface.h
- * Author: etudiant
- *
- * Created on 20 avril 2021, 15:56
+/**
+ * \file   SupprimeBorneInterface.h
+ * \brief  Prototype de la classe SupprimeBorneInterface
+ * \author David Ferland
+ * \version 0.1
+ * \date 18 avril 2021
  */
 
 #ifndef _SUPPRIMEBORNEINTERFACE_H

@@ -1,14 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/*
- * File:   AjoutBorneStatInterface.cpp
- * Author: etudiant
- *
- * Created on 19 avril 2021, 22:10
+/**
+ * \file   AjoutBorneStatInterface.cpp
+ * \brief  Implémentation de la fenêtre AjoutBorneStatInterface
+ * \author David Ferland
+ * \version 0.1
+ * \date 18 avril 2021
  */
 
 #include "AjoutBorneStatInterface.h"
@@ -16,13 +11,26 @@
 
 using namespace bornesQuebec;
 
+/**
+ * \brief  Constructeur de la fenêtre AjoutBorneInterface
+ *
+ */
 AjoutBorneStatInterface::AjoutBorneStatInterface ()
 {
   widget.setupUi (this);
 }
 
+/**
+ * \brief  Destructeur des objets AjoutBorneInterface
+ *
+ */
 AjoutBorneStatInterface::~AjoutBorneStatInterface () { }
 
+/**
+ * \brief Accesseur pour un objet Borne
+ * Crée un objet borneStationnement avec les informations entrées dans la fenêtre AjoutBorneStatInterface
+ * \return pointeur vers un objet borneStationnement sur le monceau
+ */
 Borne*
 AjoutBorneStatInterface::reqBorne () const
 {
@@ -38,6 +46,10 @@ AjoutBorneStatInterface::reqBorne () const
                                  widget.lineEditCoteRue->text ().toStdString ());
 }
 
+/**
+ * \brief  Slot qui valide les données entrées par l'usager
+ *
+ */
 void
 AjoutBorneStatInterface::validerValeur ()
 {

@@ -1,14 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/*
- * File:   AjoutBorneStatInterface.h
- * Author: etudiant
- *
- * Created on 19 avril 2021, 22:10
+/**
+ * \file   AjoutBorneStatInterface.h
+ * \brief  Prototype de la classe AjoutBorneStatInterface
+ * \author David Ferland
+ * \version 0.1
+ * \date 18 avril 2021
  */
 
 #ifndef _AJOUTBORNESTATINTERFACE_H

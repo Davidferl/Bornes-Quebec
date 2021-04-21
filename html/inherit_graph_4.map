@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classbornes_quebec_1_1_borne.html" title=" " alt="" coords="5,56,167,83"/>
+<area shape="rect" id="node2" href="$classbornes_quebec_1_1_borne_fontaine.html" title=" " alt="" coords="235,5,452,32"/>
+<area shape="rect" id="node3" href="$classbornes_quebec_1_1_borne_stationnement.html" title=" " alt="" coords="215,56,472,83"/>
+<area shape="rect" id="node4" href="$class_borne_test.html" title="réimplémentation de la classe abstraite Borne pour permettre la création d&#39;objet borne pour les test" alt="" coords="300,107,387,133"/>
+</map>

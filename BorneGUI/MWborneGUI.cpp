@@ -17,15 +17,27 @@
 
 using namespace bornesQuebec;
 
+/**
+ * \brief  Destructeur des objets MWborneGUI
+ *
+ */
 MWborneGUI::~MWborneGUI () { }
 
+/**
+ * \brief  Constructeur de la fenêtre MWborneGUI
+ *
+ */
 MWborneGUI::MWborneGUI (QWidget *parent) : QMainWindow (parent), m_registre ("Registre de bornes du Québec 2021")
 {
   widget.setupUi (this);
   afficherRegistre (m_registre);
-
 }
 
+/**
+ * \brief  affiche le registre dans la fenêtre principale
+ * \param[in] p_registre un objet RegistreBorne
+ *
+ */
 void
 MWborneGUI::afficherRegistre (RegistreBorne p_registre)
 {
@@ -33,6 +45,10 @@ MWborneGUI::afficherRegistre (RegistreBorne p_registre)
   widget.listWidgetRegistre->addItem (QString::fromStdString ((p_registre).reqRegistreBorneFormate ()));
 }
 
+/**
+ * \brief  Slot qui récupère un objet Borne Fontaine et l'ajoute à l'attribut m_registre
+ *
+ */
 void
 MWborneGUI::dialogAjoutBorneFontaine ()
 {
@@ -59,6 +75,10 @@ MWborneGUI::dialogAjoutBorneFontaine ()
 
 }
 
+/**
+ * \brief  Slot qui récupère un objet Borne Stationnement et l'ajoute à l'attribut m_registre
+ *
+ */
 void
 MWborneGUI::dialogAjoutBorneStat ()
 {
@@ -82,6 +102,10 @@ MWborneGUI::dialogAjoutBorneStat ()
 
 }
 
+/**
+ * \brief  Slot qui supprime un objet Borne de l'attribut m_registre
+ *
+ */
 void
 MWborneGUI::dialogSupprimerBorne ()
 {

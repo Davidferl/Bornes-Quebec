@@ -1,0 +1,5 @@
+<map id="bornesQuebec::RegistreBorne::ajouteBorne" name="bornesQuebec::RegistreBorne::ajouteBorne">
+<area shape="rect" id="node1" title="Ajoute un objet Borne dans le vecteur de l&#39;objet courant." alt="" coords="308,35,523,76"/>
+<area shape="rect" id="node2" href="$class_m_wborne_g_u_i.html#affd84fff963831b94e7a7c4e8e60f0ce" title="Slot qui récupère un objet Borne Fontaine et l&#39;ajoute à l&#39;attribut m_registre." alt="" coords="19,5,247,47"/>
+<area shape="rect" id="node3" href="$class_m_wborne_g_u_i.html#aef411d3ec9d3835ac9d74ef3477b53ea" title="Slot qui récupère un objet Borne Stationnement et l&#39;ajoute à l&#39;attribut m_registre." alt="" coords="5,71,260,98"/>
+</map>

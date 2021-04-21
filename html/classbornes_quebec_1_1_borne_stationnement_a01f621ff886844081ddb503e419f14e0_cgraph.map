@@ -1,0 +1,13 @@
+<map id="bornesQuebec::BorneStationnement::reqBorneFormate" name="bornesQuebec::BorneStationnement::reqBorneFormate">
+<area shape="rect" id="node1" title="Retourne une chaine de caractère qui contient l&#39;information de l&#39;objet BorneStationnement." alt="" coords="5,267,263,308"/>
+<area shape="rect" id="node2" href="$classbornes_quebec_1_1_borne.html#adeccf486d5bb87ac3f240c11625c9b0a" title="Retourne une chaine de caractère qui contient l&#39;information de l&#39;objet Borne." alt="" coords="359,136,520,177"/>
+<area shape="rect" id="node8" href="$classbornes_quebec_1_1_borne_stationnement.html#a5861ab58264c9848e19282c8e3b630b7" title="Acesseur pour le coté de la rue de la borne stationnement." alt="" coords="311,201,568,243"/>
+<area shape="rect" id="node9" href="$classbornes_quebec_1_1_borne_stationnement.html#a6824c463d00adb1d287d201b96f978e6" title="Acesseur pour la lecture métrique de la borne stationnement." alt="" coords="311,267,568,308"/>
+<area shape="rect" id="node10" href="$classbornes_quebec_1_1_borne_stationnement.html#af7ea9f1d6beee21e937012f3167a44bc" title="Acesseur pour le numéro de la borne stationnement." alt="" coords="311,332,568,373"/>
+<area shape="rect" id="node11" href="$classbornes_quebec_1_1_borne_stationnement.html#a0130792eb9a28e7d05ce5f238b337522" title="Acesseur pour le segment de rue de la borne stationnement." alt="" coords="311,397,568,439"/>
+<area shape="rect" id="node3" href="$classbornes_quebec_1_1_borne.html#a031ab90aa8c6cbd135625a90435cc8ae" title="Acesseur pour la direction." alt="" coords="624,5,785,47"/>
+<area shape="rect" id="node4" href="$classbornes_quebec_1_1_borne.html#a0e70280f31bcead3218da64adc3f5660" title="Acesseur pour l&#39;identifiant de la borne." alt="" coords="624,71,785,112"/>
+<area shape="rect" id="node5" href="$classbornes_quebec_1_1_borne.html#a008a75f38f5552ff8ebe87ebb5d0711f" title="Acesseur pour la latitude de la borne." alt="" coords="624,136,785,177"/>
+<area shape="rect" id="node6" href="$classbornes_quebec_1_1_borne.html#a37e65cf6d1bbc957f33271b1d11f87b3" title="Acesseur pour la longitude de la borne." alt="" coords="624,201,785,243"/>
+<area shape="rect" id="node7" href="$classbornes_quebec_1_1_borne.html#a8abae9caa519a4d472b03dd9f179e54a" title="Acesseur pour le nom topographique." alt="" coords="616,267,793,308"/>
+</map>

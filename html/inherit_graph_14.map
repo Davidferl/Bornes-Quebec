@@ -1,0 +1,7 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" title=" " alt="" coords="5,81,53,108"/>
+<area shape="rect" id="node2" href="$class_registre_borne_fixture.html" title=" " alt="" coords="112,5,271,32"/>
+<area shape="rect" id="node3" href="$classune_borne.html" title="Creation d&#39;une fixture a utiliser pour les methodes publiques de la classe Borne." alt="" coords="149,56,233,83"/>
+<area shape="rect" id="node4" href="$classune_borne_fontaine.html" title="Creation d&#39;une fixture à utiliser pour les methodes publiques de la classe BorneFontaine." alt="" coords="121,107,261,133"/>
+<area shape="rect" id="node5" href="$classune_borne_stationnement.html" title="Creation d&#39;une fixture a utiliser pour les methodes publiques de la classe BorneStationnement." alt="" coords="101,157,281,184"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="bornesQuebec::RegistreBorne::supprimeBorne" name="bornesQuebec::RegistreBorne::supprimeBorne">
+<area shape="rect" id="node1" title="methode qui prend un identifiant de borne en entrée et qui supprime la borne du registre" alt="" coords="276,5,491,47"/>
+<area shape="rect" id="node2" href="$class_m_wborne_g_u_i.html#addc999f24222353b6cc72fe50ec8cebc" title="Slot qui supprime un objet Borne de l&#39;attribut m_registre." alt="" coords="5,5,228,47"/>
+</map>

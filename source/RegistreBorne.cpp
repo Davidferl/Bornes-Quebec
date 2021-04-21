@@ -121,8 +121,6 @@ RegistreBorne::borneEstDejaPresenteID (int p_identifiant) const
 void
 RegistreBorne::ajouteBorne (const Borne& p_borne)
 {
-
-
   if (RegistreBorne::borneEstDejaPresente (p_borne) == true)
     {
       throw BorneDejaPresenteException ("Impossible d'ajouter cette borne car elle est deja presente dans le registre");
@@ -131,8 +129,7 @@ RegistreBorne::ajouteBorne (const Borne& p_borne)
     {
       m_vBornes.push_back (p_borne.clone ());
     }
-
-
+  INVARIANTS ();
 }
 
 /**

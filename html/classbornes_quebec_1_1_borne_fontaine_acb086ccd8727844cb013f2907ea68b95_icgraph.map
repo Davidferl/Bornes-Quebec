@@ -1,0 +1,4 @@
+<map id="bornesQuebec::BorneFontaine::reqArrondissement" name="bornesQuebec::BorneFontaine::reqArrondissement">
+<area shape="rect" id="node1" title="Acesseur pour l&#39;arrondissement où se trouve la borne." alt="" coords="271,5,488,47"/>
+<area shape="rect" id="node2" href="$classbornes_quebec_1_1_borne_fontaine.html#aa01bf6b83ebf317ce613c48978c066b1" title="Retourne une chaine de caractère qui contient l&#39;information de l&#39;objet BorneFontaine." alt="" coords="5,5,223,47"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="MWborneGUI::afficherRegistre" name="MWborneGUI::afficherRegistre">
+<area shape="rect" id="node1" title="affiche le registre dans la fenêtre principale" alt="" coords="308,101,527,127"/>
+<area shape="rect" id="node2" href="$class_m_wborne_g_u_i.html#affd84fff963831b94e7a7c4e8e60f0ce" title="Slot qui récupère un objet Borne Fontaine et l&#39;ajoute à l&#39;attribut m_registre." alt="" coords="19,5,247,47"/>
+<area shape="rect" id="node3" href="$class_m_wborne_g_u_i.html#aef411d3ec9d3835ac9d74ef3477b53ea" title="Slot qui récupère un objet Borne Stationnement et l&#39;ajoute à l&#39;attribut m_registre." alt="" coords="5,71,260,98"/>
+<area shape="rect" id="node4" href="$class_m_wborne_g_u_i.html#addc999f24222353b6cc72fe50ec8cebc" title="Slot qui supprime un objet Borne de l&#39;attribut m_registre." alt="" coords="21,123,244,164"/>
+<area shape="rect" id="node5" href="$class_m_wborne_g_u_i.html#a3817074cbff18bcbde6ee1180ddb61c1" title="Constructeur de la fenêtre MWborneGUI." alt="" coords="31,189,234,215"/>
+</map>
