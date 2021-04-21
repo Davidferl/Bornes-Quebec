@@ -39,7 +39,7 @@ MWborneGUI::MWborneGUI (QWidget *parent) : QMainWindow (parent), m_registre ("Re
  *
  */
 void
-MWborneGUI::afficherRegistre (RegistreBorne p_registre)
+MWborneGUI::afficherRegistre (const RegistreBorne& p_registre) const
 {
   widget.listWidgetRegistre->clear ();
   widget.listWidgetRegistre->addItem (QString::fromStdString ((p_registre).reqRegistreBorneFormate ()));

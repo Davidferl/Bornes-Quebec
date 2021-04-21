@@ -124,7 +124,11 @@ std::string
 BorneStationnement::reqBorneFormate () const
 {
   std::ostringstream os;
-  os << "Borne de stationnement" << std::endl;
+  if (m_type == "stationnement")
+    os << "Borne de stationnement" << std::endl;
+  if (m_type == "paiement")
+    os << "Borne de paiement" << std::endl;
+
   os << "----------------------------------------------" << std::endl;
   os << Borne::reqBorneFormate ();
   os << "Distance mesuree          : " << reqLectureMetrique () << std::endl;

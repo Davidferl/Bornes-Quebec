@@ -27,7 +27,7 @@ namespace bornesQuebec
     const RegistreBorne& operator= (const RegistreBorne& p_registreBorne);
     const std::string& reqNomRegistreBorne () const;
     void ajouteBorne (const Borne& p_borne);
-    std::string reqRegistreBorneFormate ();
+    std::string reqRegistreBorneFormate () const;
     void supprimeBorne (int p_identifiant);
 
 

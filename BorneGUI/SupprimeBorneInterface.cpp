@@ -9,7 +9,7 @@
 #include "SupprimeBorneInterface.h"
 
 /**
- * \brief
+ * \brief Constructeur de la fenêtre SupprimeBorneInterface
  *
  */
 SupprimeBorneInterface::SupprimeBorneInterface ()
@@ -17,8 +17,16 @@ SupprimeBorneInterface::SupprimeBorneInterface ()
   widget.setupUi (this);
 }
 
+/**
+ * \brief Destructeur de la fenêtre SupprimeBorneInterface
+ *
+ */
 SupprimeBorneInterface::~SupprimeBorneInterface () { }
 
+/**
+ * \brief Accesseur qui retourne l'identifiant de bornes entré par l'utilisateur
+ *
+ */
 int
 SupprimeBorneInterface::reqIdentifiant () const
 {

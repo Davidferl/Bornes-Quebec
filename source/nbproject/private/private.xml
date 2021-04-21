@@ -9,7 +9,10 @@
         <group name="TP">
             <file>file:/home/etudiant/Bureau/TP/TP3/source/RegistreBorne.cpp</file>
             <file>file:/home/etudiant/Bureau/TP/TP3/source/Borne.cpp</file>
+            <file>file:/home/etudiant/Bureau/TP/TP3/source/Borne.h</file>
+            <file>file:/home/etudiant/Bureau/TP/TP3/source/BorneFontaine.h</file>
             <file>file:/home/etudiant/Bureau/TP/TP3/source/RegistreBorne.h</file>
+            <file>file:/home/etudiant/Bureau/TP/TP3/source/BorneStationnement.h</file>
             <file>file:/home/etudiant/Bureau/TP/TP3/source/BorneFontaine.cpp</file>
             <file>file:/home/etudiant/Bureau/TP/TP3/source/BorneStationnement.cpp</file>
         </group>

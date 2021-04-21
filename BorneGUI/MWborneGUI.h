@@ -21,7 +21,7 @@ public:
 
   MWborneGUI (QWidget *parent = 0);
   virtual ~MWborneGUI ();
-  void afficherRegistre (bornesQuebec::RegistreBorne p_registre);
+  void afficherRegistre (const bornesQuebec::RegistreBorne& p_registre) const;
 
 
 public slots:

@@ -82,10 +82,6 @@ RegistreBorne::borneEstDejaPresente (const Borne & p_borne) const
         {
           bornePresente = true;
         }
-      else
-        {
-          bornePresente = false;
-        }
     }
   return bornePresente;
 }
@@ -105,10 +101,6 @@ RegistreBorne::borneEstDejaPresenteID (int p_identifiant) const
       if ((*it)->reqIdentifiant () == p_identifiant)
         {
           bornePresente = true;
-        }
-      else
-        {
-          bornePresente = false;
         }
     }
   return bornePresente;
@@ -177,7 +169,7 @@ RegistreBorne::reqNomRegistreBorne () const
  * \return string qui contient l'information des bornes dans l'objet RegistreBorne
  */
 std::string
-RegistreBorne::reqRegistreBorneFormate ()
+RegistreBorne::reqRegistreBorneFormate () const
 {
   std::ostringstream os;
   os << "Registre : " << reqNomRegistreBorne () << std::endl;
@@ -198,7 +190,6 @@ RegistreBorne::reqRegistreBorneFormate ()
 void
 RegistreBorne::supprimeBorne (int p_identifiant)
 {
-
   if (borneEstDejaPresenteID (p_identifiant) == false)
     {
       throw BorneAbsenteException ("Impossible de supprimer la borne car elle n'est pas dans le registre");
@@ -215,6 +206,7 @@ RegistreBorne::supprimeBorne (int p_identifiant)
             }
         }
     }
+  INVARIANTS ();
 }
 
 /**
