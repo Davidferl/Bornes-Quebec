@@ -1,5 +1,6 @@
 <map id="MWborneGUI::dialogSupprimerBorne" name="MWborneGUI::dialogSupprimerBorne">
-<area shape="rect" id="node1" title="Slot qui supprime un objet Borne de l&#39;attribut m_registre." alt="" coords="5,27,228,69"/>
-<area shape="rect" id="node2" href="$class_m_wborne_g_u_i.html#a6a2820f1523a4fe754c8c72cc97b5c3b" title="affiche le registre dans la fenêtre principale" alt="" coords="276,5,495,32"/>
-<area shape="rect" id="node3" href="$classbornes_quebec_1_1_registre_borne.html#adc3a00ca38a7c360346041edc9da4d8a" title="methode qui prend un identifiant de borne en entrée et qui supprime la borne du registre" alt="" coords="278,57,493,98"/>
+<area shape="rect" id="node1" title="Slot qui supprime un objet Borne de l&#39;attribut m_registre." alt="" coords="5,57,228,98"/>
+<area shape="rect" id="node2" href="$class_m_wborne_g_u_i.html#a15ec72e50e0d3a93940ad9774d54956c" title="affiche le registre dans la fenêtre principale" alt="" coords="276,5,495,32"/>
+<area shape="rect" id="node3" href="$class_supprime_borne_interface.html#a1a1cc3fdc52504865c8b0ee8ac2ed44d" title="Accesseur qui retourne l&#39;identifiant de bornes entré par l&#39;utilisateur." alt="" coords="295,57,475,98"/>
+<area shape="rect" id="node4" href="$classbornes_quebec_1_1_registre_borne.html#adc3a00ca38a7c360346041edc9da4d8a" title="methode qui prend un identifiant de borne en entrée et qui supprime la borne du registre" alt="" coords="278,122,493,163"/>
 </map>

@@ -1,6 +1,6 @@
 <map id="MWborneGUI::dialogAjoutBorneStat" name="MWborneGUI::dialogAjoutBorneStat">
 <area shape="rect" id="node1" title="Slot qui récupère un objet Borne Stationnement et l&#39;ajoute à l&#39;attribut m_registre." alt="" coords="5,64,260,91"/>
-<area shape="rect" id="node2" href="$class_m_wborne_g_u_i.html#a6a2820f1523a4fe754c8c72cc97b5c3b" title="affiche le registre dans la fenêtre principale" alt="" coords="308,5,527,32"/>
+<area shape="rect" id="node2" href="$class_m_wborne_g_u_i.html#a15ec72e50e0d3a93940ad9774d54956c" title="affiche le registre dans la fenêtre principale" alt="" coords="308,5,527,32"/>
 <area shape="rect" id="node3" href="$classbornes_quebec_1_1_registre_borne.html#a4177b428330990d45f237d00e194a563" title="Ajoute un objet Borne dans le vecteur de l&#39;objet courant." alt="" coords="310,57,525,98"/>
 <area shape="rect" id="node4" href="$class_ajout_borne_stat_interface.html#a0d3b016d940e0959e153e0a36e5330a4" title="Accesseur pour un objet Borne Crée un objet borneStationnement avec les informations entrées dans la ..." alt="" coords="328,122,507,163"/>
 </map>

@@ -1,0 +1,4 @@
+<map id="SupprimeBorneInterface::reqIdentifiant" name="SupprimeBorneInterface::reqIdentifiant">
+<area shape="rect" id="node1" title="Accesseur qui retourne l&#39;identifiant de bornes entré par l&#39;utilisateur." alt="" coords="276,5,456,47"/>
+<area shape="rect" id="node2" href="$class_m_wborne_g_u_i.html#addc999f24222353b6cc72fe50ec8cebc" title="Slot qui supprime un objet Borne de l&#39;attribut m_registre." alt="" coords="5,5,228,47"/>
+</map>

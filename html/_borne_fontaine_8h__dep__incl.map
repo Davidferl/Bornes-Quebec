@@ -1,10 +1,11 @@
 <map id="source/BorneFontaine.h" name="source/BorneFontaine.h">
-<area shape="rect" id="node1" title="Prototype de la classe BorneFontaine." alt="" coords="453,5,627,32"/>
-<area shape="rect" id="node2" href="$_ajout_borne_fontaine_interface_8h.html" title="Prototype de la classe AjoutBorneFontaineInterface." alt="" coords="49,80,265,121"/>
+<area shape="rect" id="node1" title="Prototype de la classe BorneFontaine." alt="" coords="497,5,671,32"/>
+<area shape="rect" id="node2" href="$_ajout_borne_fontaine_interface_8h.html" title="Prototype de la classe AjoutBorneFontaineInterface." alt="" coords="93,80,309,121"/>
 <area shape="rect" id="node4" href="$_m_wborne_g_u_i_8cpp.html" title="Implémentation de la fenêtre principale de borneGUI." alt="" coords="246,177,447,203"/>
-<area shape="rect" id="node5" href="$_m_wborne_g_u_i_8h.html" title="Prototype de la classe MWborneGUI." alt="" coords="340,87,527,114"/>
-<area shape="rect" id="node6" href="$_borne_fontaine_8cpp.html" title="Implementation de la classe BorneFontaine." alt="" coords="551,87,742,114"/>
-<area shape="rect" id="node7" href="$_borne_fontaine_testeur_8cpp.html" title="Testeur de la classe BorneFontaine." alt="" coords="766,80,965,121"/>
-<area shape="rect" id="node8" href="$_registre_borne_testeur_8cpp.html" title="Testeur de la classe RegistreBorne." alt="" coords="989,80,1187,121"/>
+<area shape="rect" id="node5" href="$_m_wborne_g_u_i_8h.html" title="Prototype de la classe MWborneGUI." alt="" coords="384,87,571,114"/>
+<area shape="rect" id="node7" href="$_borne_fontaine_8cpp.html" title="Implementation de la classe BorneFontaine." alt="" coords="595,87,786,114"/>
+<area shape="rect" id="node8" href="$_borne_fontaine_testeur_8cpp.html" title="Testeur de la classe BorneFontaine." alt="" coords="810,80,1009,121"/>
+<area shape="rect" id="node9" href="$_registre_borne_testeur_8cpp.html" title="Testeur de la classe RegistreBorne." alt="" coords="1033,80,1231,121"/>
 <area shape="rect" id="node3" href="$_ajout_borne_fontaine_interface_8cpp.html" title="Implémentation de la fenêtre AjoutBorneInterface." alt="" coords="5,169,221,211"/>
+<area shape="rect" id="node6" href="$main_8cpp.html" title="programme principal" alt="" coords="471,177,619,203"/>
 </map>

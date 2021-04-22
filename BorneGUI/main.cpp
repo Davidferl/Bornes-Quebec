@@ -1,14 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/*
- * File:   main.cpp
- * Author: etudiant
- *
- * Created on 18 avril 2021, 17:06
+/**
+ * \file   main.cpp
+ * \brief  programme principal
+ * \author David Ferland
+ * \version 0.1
+ * \date 18 avril 2021
  */
 
 #include <QApplication>
