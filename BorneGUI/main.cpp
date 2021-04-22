@@ -28,3 +28,4 @@ main (int argc, char *argv[])
   fenetre.show ();
   return app.exec ();
 }
+//commit pour montrer que j'ai reussi a faire fonctionner git
